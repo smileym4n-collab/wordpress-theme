@@ -9,13 +9,14 @@ It is intentionally minimal and focuses on one goal:
 
 ## Files included
 
-- `style.css` (required theme header + child metadata)
+- `style.css` (required theme header + child metadata + logo replacement for site title + Woo breadcrumb removal styling support)
 - `functions.php` (parent/child style enqueue + WooCommerce support)
 - `woocommerce.php` (classic-template fallback for non-block Woo setups)
 - `templates/archive-product.html` and `templates/single-product.html` (block-template overrides matching Retrospect page wrappers)
 - `templates/taxonomy-product_cat.html` and `templates/taxonomy-product_tag.html` (product taxonomy pages use same wrapper as shop)
 - `templates/page-cart.html`, `templates/page-checkout.html`, `templates/page-my-account.html` (forces key Woo pages onto the same wrapper as normal pages)
 - `assets/css/woocommerce.css` (small scoped WooCommerce visual/layout adjustments)
+- `logo/README.md` (location for `logo/logo.png` used by the site-title logo replacement)
 
 ## How to zip this child theme
 

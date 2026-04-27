@@ -13,6 +13,21 @@ Text Domain: tom-watson-audio-child
 */
 
 /*
+ * Replace the default text site title with the provided logo image.
+ * The underlying site-title link remains the homepage link.
+ */
+.wp-block-site-title a {
+  background: url("logo/logo.png") no-repeat left center;
+  background-size: contain;
+  display: block;
+  height: 94px;
+  max-width: 260px;
+  overflow: hidden;
+  text-indent: -9999px;
+  white-space: nowrap;
+}
+
+/*
  * Keep this file intentionally small.
  * WooCommerce-specific visual fixes live in assets/css/woocommerce.css.
  */

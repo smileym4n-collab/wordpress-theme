@@ -45,3 +45,15 @@ function twa_child_add_woocommerce_support() {
 	add_theme_support( 'wc-product-gallery-slider' );
 }
 add_action( 'after_setup_theme', 'twa_child_add_woocommerce_support' );
+
+
+/**
+ * Remove WooCommerce breadcrumb trail (e.g. "Home / Shop") to match
+ * the cleaner page header style used by normal Retrospect pages.
+ */
+function twa_child_remove_woocommerce_breadcrumb() {
+	if ( function_exists( 'is_woocommerce' ) ) {
+		remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
+	}
+}
+add_action( 'wp', 'twa_child_remove_woocommerce_breadcrumb' );
