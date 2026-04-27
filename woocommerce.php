@@ -1,9 +1,9 @@
 <?php
 /**
- * WooCommerce template for Tom Watson Audio Child.
+ * WooCommerce classic-template fallback for Tom Watson Audio Child.
  *
- * Uses the normal page structure so shop/cart/checkout/account pages
- * render in the same main content area as standard site pages.
+ * Block-template files in /templates are the primary Woo layout for this
+ * block theme. This file is kept for compatibility/fallback scenarios.
  */
 
 defined( 'ABSPATH' ) || exit;
