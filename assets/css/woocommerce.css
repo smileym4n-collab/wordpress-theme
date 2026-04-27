@@ -1,0 +1,133 @@
+/*
+ * WooCommerce layout + component tuning for Retrospect child theme.
+ * Scoped to WooCommerce screens to avoid changing non-shop pages.
+ */
+
+/* Match normal content column rhythm on WooCommerce pages */
+.woocommerce-page .site-main,
+.woocommerce .site-main,
+.post-type-archive-product .site-main,
+.tax-product_cat .site-main,
+.tax-product_tag .site-main,
+.single-product .site-main {
+  max-width: 920px;
+}
+
+/* Ensure the product grid fits naturally inside the existing main area */
+.woocommerce ul.products,
+.woocommerce-page ul.products {
+  margin: 0;
+  padding: 0;
+}
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  margin-bottom: 2.25rem;
+}
+
+.woocommerce ul.products li.product a img,
+.woocommerce-page ul.products li.product a img {
+  width: 100%;
+  height: auto;
+}
+
+/* Reuse simple editorial spacing similar to posts/pages */
+.woocommerce .woocommerce-breadcrumb,
+.woocommerce-page .woocommerce-breadcrumb,
+.woocommerce .woocommerce-result-count,
+.woocommerce-page .woocommerce-result-count,
+.woocommerce .woocommerce-ordering,
+.woocommerce-page .woocommerce-ordering {
+  margin-bottom: 1.5rem;
+}
+
+.woocommerce .entry-summary,
+.single-product .product .summary {
+  max-width: 40rem;
+}
+
+/* Buttons tuned to neutral Retrospect-like look */
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  background: #2f3136;
+  border: 1px solid #2f3136;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 0.7em 1.1em;
+}
+
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+  background: #1f2124;
+  border-color: #1f2124;
+  color: #fff;
+}
+
+/* Cart and checkout readability */
+.woocommerce table.shop_table {
+  border-collapse: collapse;
+  margin-bottom: 1.75rem;
+}
+
+.woocommerce table.shop_table th,
+.woocommerce table.shop_table td {
+  padding: 0.85rem 0.9rem;
+  vertical-align: middle;
+}
+
+.woocommerce-cart .cart-collaterals,
+.woocommerce-checkout .woocommerce {
+  margin-top: 1.5rem;
+}
+
+/* Inputs and quantity fields aligned with editorial styling */
+.woocommerce input.input-text,
+.woocommerce textarea,
+.woocommerce select,
+.woocommerce .quantity .qty {
+  border: 1px solid #d3d3d3;
+  border-radius: 2px;
+  font: inherit;
+  min-height: 2.4rem;
+  padding: 0.4rem 0.55rem;
+}
+
+/* Account nav readability */
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li {
+  margin: 0 0 0.45rem;
+}
+
+/* Keep notices visible and consistent */
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+  margin-bottom: 1.25rem;
+}
+
+/* Narrow screens */
+@media (max-width: 900px) {
+  .woocommerce ul.products li.product,
+  .woocommerce-page ul.products li.product {
+    width: 100%;
+    margin-right: 0;
+    float: none;
+  }
+}
